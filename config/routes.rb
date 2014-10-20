@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-resources :searches
+  resources :searches
+
   root :to => 'searches#new'
 
-  post 'searches/new'
+  # get '/searches' => 'searches#search'
 
-  # get 'searches/index'
+  # post '/searches' => 'searches#index'
 
 end
