@@ -1,0 +1,16 @@
+<h1>Find a Doctor or Dentist:</h1>
+
+<%= form_tag do %>
+  <div class="doctor">
+      <h5>Enter a practice or name:</h5>
+      <%= text_field_tag :term, params[:term], placeholder: 'Dr. Doom, Buck Teeth DDS' %>
+  </div>
+  <br>
+  <div class="search-button">
+    <%= submit_tag 'Ooh! Ooh! Click Me!' %>
+  </div>
+<% end %>
+
+
+
+<h2>Here's your Results!</h2>
