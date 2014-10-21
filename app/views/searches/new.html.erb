@@ -1,6 +1,6 @@
 <h1>Find a Doctor or Dentist:</h1>
 
-<%= form_tag do %>
+<%= form_tag search_path(format: :json), method: :get do %>
   <div class="doctor">
       <h5>Enter a practice or name:</h5>
       <%= text_field_tag :term, params[:term], placeholder: 'Dr. Doom, Buck Teeth DDS' %>

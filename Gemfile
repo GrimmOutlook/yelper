@@ -27,4 +27,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'yelp', '~> 2.0.4', require: 'yelp'
-gem 'httparty'
+gem 'httparty', '~> 0.13.1'
