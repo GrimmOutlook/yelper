@@ -2,20 +2,23 @@
 
 <%= form_tag search_path(format: :json), method: :get do %>
   <div class="doctor">
-      <h5>Enter a practice or area of practice:</h5>
+      <h5>Enter a specific practice or area of practice<br>
+      (returns json formatted results):</h5>
       <%= text_field_tag :term, params[:term], placeholder: 'Dr. Doom, Buck Teeth DDS' %>
   </div>
-  <br>
   <div class="search-button">
-    <h5>Click here for json formatted results:</h5>
     <%= submit_tag 'Ooh! Ooh! Click Me!' %>
   </div>
 <% end %>
 
 
 <%= form_tag search_path(format: :html), method: :get do %>
+  <div class="doctor">
+    <h5>Enter a specific practice or area of practice<br>
+      (returns html formatted results):</h5>
+    <%= text_field_tag :term, params[:term], placeholder: 'Dr. Doom, Buck Teeth DDS' %>
+  </div>
   <div class="search-button">
-    <h5>Click here for html formatted results:</h5>
     <%= submit_tag 'Ooh! Ooh! Click Me!' %>
   </div>
 <% end %>

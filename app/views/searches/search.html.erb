@@ -2,6 +2,6 @@
 
 <h3>Why does this not render the html version of the search results?</h3>
 
-<%= Yelp.client.search('Baltimore', @parameters) %>
+<%= render html: Yelp.client.search('Baltimore', @parameters) %>
 
 <%= @parameters %>
