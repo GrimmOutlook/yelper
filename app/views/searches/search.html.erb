@@ -1,3 +1,7 @@
 <h2>Here's your Results!</h2>
 
-<h3>The searches_controller should render this view, right????!!!</h3>
+<h3>Why does this not render the html version of the search results?</h3>
+
+<%= Yelp.client.search('Baltimore', @parameters) %>
+
+<%= @parameters %>
